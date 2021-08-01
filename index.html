@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- tab content script -->
+    <script>
+        function openTab(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <style>
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>i-DAMAN</title>
+</head>
+
+<body>
+    <!-- tab button -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'home')">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'psb')">PSB</button>
+        <button class="tablinks" onclick="openTab(event, 'olt')">OLT</button>
+    </div>
+    <div class="home">
+        <h1 class="text-center">i-DAMAN</h1>
+        <div class="text-center">Integrated Dashboard Management (Prototype)</div>
+    </div>
+    <!-- tab psb alter create -->
+    <div id="psb" class="tabcontent">
+        <iframe src="https://script.google.com/macros/s/AKfycbzerlsEGdxFKL5LKaGStAoUAatmZkLR8_Q89AmpX-6lEBYICjPx1Uj4vr7-CRV6ZHiC/exec" style="position:fixed; left:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+    </div>
+
+    <!-- tab olt -->
+    <div id="olt" class="tabcontent">
+        <iframe src="olt.html" style="position:fixed; left:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+    </div>
+</body>
+<footer>
+    <div class="fixed-bottom" style="background-color:#eee">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm text-center">
+                made with ♥<br>
+                Version 0.01
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+</footer>
+
+</html>

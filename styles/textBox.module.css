@@ -13,6 +13,23 @@
     /* transition border-color: calc(var(--transition, 0.2) * 1s) ease; */
 }
 
-.btn-normal {
-
+.btnNormal {
+	background-color:#44c767;
+	border-radius:9px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2f6627;
+}
+.btnNormal:hover {
+	background-color:#5cbf2a;
+}
+.btnNormal:active {
+	position:relative;
+	top:1px;
 }

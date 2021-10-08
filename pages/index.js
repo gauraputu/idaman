@@ -24,7 +24,7 @@ export default function Home() {
       <Layout />
       <main className={styles.main}>
         <h1 className={styles.title}>
-          PSB Alter Create
+          PSB Alter Create edited
         </h1>
         <textarea className={styles2.textBox} id="telegramText" placeholder="paste telegram text here!"></textarea>
         <button className={styles2.btnNormal} onClick={(e)=>{proses(data)}}>Process</button>

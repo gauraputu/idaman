@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.1.2",
+    "jquery": "^3.6.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-notification-alert": "^0.0.13",
+    "reactstrap": "^8.10.0",
     "swr": "^1.0.1"
   },
   "devDependencies": {

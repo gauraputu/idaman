@@ -1,19 +1,4 @@
-//download data from google sheet in the form of array obsolete code (easier to use swr) but will be here for future reference
-// export function sheetData(){
-
-//     async function get() {
-//         let url = 'https://script.google.com/macros/s/AKfycbxh6ENRLKyYif-w5j-pder-nGVIN-QL_Y88O5DOBCDxIEuHrhQS_1XR0S1om6uPcMwy3Q/exec'
-//         let obj = await (await fetch(url)).json();
-
-//         return obj;
-//     }
-
-//     let data;
-//     (async () => {
-//       data = await get()
-//     //   console.log(data)
-//     })()
-// }  
+// import Notifications from './pages/Notifications'
 
 //process input
 export function proses(data) {
@@ -41,18 +26,36 @@ export function proses(data) {
                 let copyResult = function () {
                     let content = "";
                     for (let j = 0; j < service.length; j++) {
-                        content += data[i][4] + '\t' + service[j] + '\t' + data[i][5] + '\n';
+                        content += data[i][4] + '\t' + service[j] + '\t' + data[i][5] + 'Service_Port' + '\n';
                     };
                     return content;
                 }();
                 navigator.clipboard.writeText(copyResult);
-                
+                // <Notifications />
                 return("Copied to Clipboard!")
             }
         }
         console.log(i);
         if (i == data.length) {
+            // <Notifications />
             return("not found")
         }
     }
 };
+
+//download data from google sheet in the form of array obsolete code (easier to use swr) but will be here for future reference
+// export function sheetData(){
+
+//     async function get() {
+//         let url = 'https://script.google.com/macros/s/AKfycbxh6ENRLKyYif-w5j-pder-nGVIN-QL_Y88O5DOBCDxIEuHrhQS_1XR0S1om6uPcMwy3Q/exec'
+//         let obj = await (await fetch(url)).json();
+
+//         return obj;
+//     }
+
+//     let data;
+//     (async () => {
+//       data = await get()
+//     //   console.log(data)
+//     })()
+// }  

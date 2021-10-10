@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-// import '../public/static/query.js'
+// import { Nav, Alert } from 'components';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

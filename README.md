@@ -13,7 +13,4 @@ so essentially this is made to make my work easier. My work is to synchronize da
 since node_module is in .gitignore, run `npm install` first then `npm run dev` 
 
 ## depedency
-`npm install --save react-notification-alert`
-`npm install --save jquery`
-`npm install --save reactstrap`
-`npm install --save bootstrap`
+`npm install react-hot-toast`

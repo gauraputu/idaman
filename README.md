@@ -1,5 +1,6 @@
 # For learning purpose
-[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/gauraputu/idaman)
+
 
 made with Next.js
 there's a lot of unnecessary things I did here and I did that because I didn't know what is good at the time. I should be able to make a better one a long time after this done.

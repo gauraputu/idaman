@@ -3,9 +3,6 @@ import styles2 from '../styles/textBox.module.css'
 import Layout from '../components/Layout'
 import { proses } from '../public/static/query.js'
 import useSWR from 'swr'
-import "react-notification-alert/dist/animate.css"
-import Notifications from './Notifications'
-import React, { Component } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 
 //constatn used
@@ -35,26 +32,6 @@ export default function Home() {
       toast.error('not found');
     }
   }
-
-  const notify = () => toast('Here is your toast.', {
-    duration: 4000,
-    position: 'top-center',
-    // Styling
-    style: {},
-    className: '',
-    // Custom Icon
-    icon: '👏',
-    // Change colors of success/error/loading icon
-    iconTheme: {
-      primary: '#000',
-      secondary: '#fff',
-    },
-    // Aria
-    ariaProps: {
-      role: 'status',
-      'aria-live': 'polite',
-    },
-  });
 
   return (
     <div className={styles.container}>

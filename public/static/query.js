@@ -1,5 +1,3 @@
-// import Notifications from './pages/Notifications'
-
 //process input
 export function proses(data, callback) {
     //data is in array format

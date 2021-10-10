@@ -30,7 +30,7 @@ export function proses(data, callback) {
                 let copyResult = function () {
                     let content = "";
                     for (let j = 0; j < service.length; j++) {
-                        content += data[i][4] + '\t' + service[j] + '\t' + data[i][5] + 'Service_Port' + '\n';
+                        content += data[i][4] + '\t' + service[j] + '\t' + data[i][5] +'\t'+ 'Service_Port' + '\n';
                     };
                     return content;
                 }();

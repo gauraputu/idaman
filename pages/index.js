@@ -26,6 +26,7 @@ export default function Home() {
 
   const lookupData = () => {
     let result = proses(data);
+    console.log(result);
     if (result == "Copied to Clipboard!") {
       toast.success('Copied to Clipboard!');
     } else {
@@ -41,12 +42,12 @@ export default function Home() {
         <h1 className={styles.title}>
           PSB Alter Create
         </h1>
-        <textarea className={styles2.textBox} id="telegramText" placeholder="paste telegram text here!"></textarea>
+        <textarea className={styles2.textBox} id="telegramText" placeholder="paste telegram text here!&#10;now support multi input with delimiter ;"></textarea>
         <button className={styles2.btnNormal} onClick={lookupData}>Process</button>
       </main>
 
       <footer className={styles.footer}>
-        Made With ♥ Version 0.30
+        Made With ♥ Version 0.31
       </footer>
     </div>
   )

@@ -27,7 +27,12 @@ export function proses(data) {
             textGroup[i] = ip[0] + '\t' + "1/" + slot[2] + "/" + port[3] + '\t' + service
             var slot_port = slot[2] + "/" + port[3];
             var lookupResult = lookup();
-
+            
+            //when lookup fail
+            if (lookupResult==undefined) {
+                lookupResult=["not found","not found"];
+            } 
+            
             for (let j = 0; j < service.length; j++) {
                 content += lookupResult[0] + '\t' + service[j] + '\t' + lookupResult[1] + '\t' + 'Service_Port' + '\n';
             };
@@ -51,7 +56,6 @@ export function proses(data) {
         }
     }
 
-    // console.log(ip, service, slot_port)
 
     function lookup() {
         for (let i = 0; i < data.length; i++) {

@@ -4,7 +4,7 @@ export function proses(data) {
     let text = document.getElementById("telegramText").value;
 
     //detect multiple input
-    let textGroup = text.match(/.+;/gi);
+    let textGroup = text.match(/.+[\w\W]*;/gi);
     if (textGroup == undefined) {
         var ip = text.match(/\d+\.\d+\.\d+\.\d+/gi);
         var service = text.match(/\d+_\d+_\w+/gi);
@@ -19,6 +19,7 @@ export function proses(data) {
         if (lookupResult == undefined) { return "not found" } else { return copyToClipboard(lookupResult, service) };
     } else {
         var content = "";
+        console.log(textGroup)
         for (let i = 0; i < textGroup.length; i++) {
             var ip = textGroup[i].match(/\d+\.\d+\.\d+\.\d+/gi);
             var service = textGroup[i].match(/\d+_\d+_\w+/gi);

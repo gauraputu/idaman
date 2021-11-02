@@ -4,7 +4,7 @@ export function proses(data) {
     let text = document.getElementById("telegramText").value;
 
     //detect multiple input
-    let textGroup = text.match(/.+[\w\W]*;/gi);
+    let textGroup = text.match(/([^;]*)/gi);
     if (textGroup == undefined) {
         var ip = text.match(/\d+\.\d+\.\d+\.\d+/gi);
         var service = text.match(/\d+_\d+_\w+/gi);
@@ -21,22 +21,32 @@ export function proses(data) {
         var content = "";
         console.log(textGroup)
         for (let i = 0; i < textGroup.length; i++) {
-            var ip = textGroup[i].match(/\d+\.\d+\.\d+\.\d+/gi);
-            var service = textGroup[i].match(/\d+_\d+_\w+/gi);
-            var slot = textGroup[i].match(/(?=.*slot)\D*(\d+)|(\d+)\/(\d+)/i); //['slot',pattern1,pattern2,pattern2]
-            var port = textGroup[i].match(/(?=.*port)\D*(\d+)|(\d+)\/(\d+)/i); //['port',pattern1,pattern2,pattern2]
-            textGroup[i] = ip[0] + '\t' + "1/" + slot[2] + "/" + port[3] + '\t' + service
-            var slot_port = slot[2] + "/" + port[3];
-            var lookupResult = lookup();
-            
-            //when lookup fail
-            if (lookupResult==undefined) {
-                lookupResult=["not found","not found"];
-            } 
-            
-            for (let j = 0; j < service.length; j++) {
-                content += lookupResult[0] + '\t' + service[j] + '\t' + lookupResult[1] + '\t' + 'Service_Port' + '\n';
-            };
+            console.log("loop:",i)
+            if(textGroup[i]==""){
+                
+            }
+            else {
+                var ip = textGroup[i].match(/\d+\.\d+\.\d+\.\d+/gi);
+                var service = textGroup[i].match(/\d+_\d+_\w+/gi);
+                var slot = textGroup[i].match(/(?=.*slot)\D*(\d+)|(\d+)\/(\d+)/i); //['slot',pattern1,pattern2,pattern2]
+                var port = textGroup[i].match(/(?=.*port)\D*(\d+)|(\d+)\/(\d+)/i); //['port',pattern1,pattern2,pattern2]
+                textGroup[i] = ip[0] + '\t' + "1/" + slot[2] + "/" + port[3] + '\t' + service
+                var slot_port = slot[2] + "/" + port[3];
+    
+                console.log('ip:',ip,'slot_port:',slot_port);
+    
+                //lookup data
+                var lookupResult = lookup();
+                
+                //when lookup fail
+                if (lookupResult==undefined) {
+                    lookupResult=["not found","not found"];
+                } 
+                
+                for (let j = 0; j < service.length; j++) {
+                    content += lookupResult[0] + '\t' + service[j] + '\t' + lookupResult[1] + '\t' + 'Service_Port' + '\n';
+                };    
+            }
         }
         navigator.clipboard.writeText(content);
         document.getElementById("telegramText").value = "";

@@ -47,7 +47,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Made With ♥ Version 0.32
+        Made With ♥ Version 0.33
       </footer>
     </div>
   )

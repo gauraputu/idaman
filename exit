@@ -1,0 +1,125 @@
+[33mcommit 19db994f3d290c77372d75085f9f90201fcbc506[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gaura <email@example.com>
+Date:   Thu Oct 14 08:36:49 2021 +0700
+
+    fix a bug in multiple input not detected if using newline before delimiter
+
+[33mcommit 4433b3f5f9fc6d0198eda83ade12a8f3c6300d89[m
+Merge: 0705777 b61c0d3
+Author: gaura <gauraasik@gmail.com>
+Date:   Wed Oct 13 12:30:30 2021 +0700
+
+    Merge pull request #2 from gauraputu/developing
+    
+    add multi input
+
+[33mcommit b61c0d343b478107dfc733ef5c7a2baf6592a78f[m[33m ([m[1;31morigin/developing[m[33m)[m
+Author: gaura <email@example.com>
+Date:   Wed Oct 13 12:28:53 2021 +0700
+
+    add behavior for multi input when lookup fail
+
+[33mcommit 4cffaea5d8603f5c5506f47f1ed634d855fc64e8[m
+Author: gaura <email@example.com>
+Date:   Wed Oct 13 12:19:42 2021 +0700
+
+    add multi input processing
+
+[33mcommit 07057776bde59631be3ae213197bc911dc75a887[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Oct 10 18:34:38 2021 +0700
+
+    fix a bug
+
+[33mcommit acb20d9b7553d40e46c8bc112472a7e7a50bf564[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Oct 10 18:28:40 2021 +0700
+
+    add badges
+
+[33mcommit 00ff6f89b81d18cdc522d43c8646e2ca3d23c4bd[m[33m ([m[1;33mtag: v0.3.0[m[33m)[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Oct 10 18:04:48 2021 +0700
+
+    fix some toast bug that make build failed
+
+[33mcommit 9bb37a63e11cac3727adf0beea367fb5547c0e5b[m
+Merge: b424dc3 6fc6d02
+Author: gaura <gauraasik@gmail.com>
+Date:   Sun Oct 10 17:57:30 2021 +0700
+
+    Merge pull request #1 from gauraputu/developing
+    
+    adding toast
+
+[33mcommit 6fc6d02cb7603c2585c40cda0b6fe76fcbd1516a[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Oct 10 17:36:18 2021 +0700
+
+    update dependecy list
+
+[33mcommit 4866aaa3498bb96607b957eb9343868c14c3799c[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Oct 10 17:35:09 2021 +0700
+
+    adding toast
+
+[33mcommit 6c41961b9b727c17506dce8c9d5935a387dad99c[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sat Oct 9 21:00:04 2021 +0700
+
+    adding toast
+
+[33mcommit b424dc31c8a74b87602f3fb726631572f0f1c129[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sat Oct 9 00:03:57 2021 +0700
+
+    another testing
+
+[33mcommit 9dfb5e878f0b2b686472baf7c26c7558eeab7383[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sat Oct 9 00:00:59 2021 +0700
+
+    testing
+
+[33mcommit 2b9f20d4cf34619546c1af38efbc8585ff3698d7[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Fri Oct 8 23:52:55 2021 +0700
+
+    first working prototype
+
+[33mcommit 419664eef24d7f1d0fb4465a0de56a81b0e64ae5[m
+Author: gaura <email@example.com>
+Date:   Fri Oct 8 15:38:39 2021 +0700
+
+    fix importing external javascript
+
+[33mcommit d780f73c3bcee19b8e1499f351eefcafba3ce20d[m
+Author: gaura <email@example.com>
+Date:   Thu Oct 7 16:34:33 2021 +0700
+
+    push from another machine
+
+[33mcommit 3dcad3d4335539e7ea530c1257804a715cc1ed8a[m
+Author: gaura <email@example.com>
+Date:   Thu Oct 7 09:26:35 2021 +0700
+
+    testing push on anothe rmachine
+
+[33mcommit f636435db94ce066b04de5a88ef52ad3b635e737[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Thu Oct 7 07:52:58 2021 +0700
+
+    adding next.js
+
+[33mcommit 2148ad7fc91fd01d2879333d9e6024450e884ac3[m
+Author: gaura <gauraasik@gmail.com>
+Date:   Sun Aug 1 23:18:33 2021 +0700
+
+    Create README.md
+
+[33mcommit 50d81f08f0ae9eb4604f87a7e4d17c118ba89fd4[m
+Author: gaura <gauraputu@gmail.com>
+Date:   Sun Aug 1 23:12:37 2021 +0700
+
+    v0.01 initial draft

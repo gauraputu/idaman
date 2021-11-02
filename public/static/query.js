@@ -5,7 +5,7 @@ export function proses(data) {
 
     //detect multiple input
     let textGroup = text.match(/([^;]*)/gi);
-    if (textGroup == undefined) {
+    if (textGroup == undefined || textGroup.length == 2) { //some ugly workaround because I messed up with textGroup variable regex and I need to fix it ASAP.
         var ip = text.match(/\d+\.\d+\.\d+\.\d+/gi);
         var service = text.match(/\d+_\d+_\w+/gi);
         var slot = text.match(/(?=.*slot)\D*(\d+)|(\d+)\/(\d+)\/(\d+)/i); //['slot',pattern1,pattern2,pattern2]
@@ -23,7 +23,7 @@ export function proses(data) {
         for (let i = 0; i < textGroup.length; i++) {
             console.log("loop:",i)
             if(textGroup[i]==""){
-                
+
             }
             else {
                 var ip = textGroup[i].match(/\d+\.\d+\.\d+\.\d+/gi);

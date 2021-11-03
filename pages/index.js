@@ -1,7 +1,8 @@
 import styles from '../styles/Home.module.css'
 import styles2 from '../styles/textBox.module.css'
 import Layout from '../components/Layout'
-import { proses } from '../public/static/query.js'
+// import { proses } from '../public/static/query.js'
+const proses = require('../public/static/query');
 import useSWR from 'swr'
 import toast, { Toaster } from 'react-hot-toast';
 

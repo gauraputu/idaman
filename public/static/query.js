@@ -1,5 +1,6 @@
 //process input
-export function proses(data) {
+exports.proses = (data) => {
+// function proses (data)  {
     //data is in array format
     let text = document.getElementById("telegramText").value;
 
@@ -88,6 +89,8 @@ export function proses(data) {
     }
 };
 
+// module.exports = proses;
+
 //download data from google sheet in the form of array obsolete code (easier to use swr) but will be here for future reference
 // export function sheetData(){
 
@@ -103,4 +106,4 @@ export function proses(data) {
 //       data = await get()
 //     //   console.log(data)
 //     })()
-// }  
+//  

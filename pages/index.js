@@ -10,7 +10,7 @@ const url = 'https://script.google.com/macros/s/AKfycbxh6ENRLKyYif-w5j-pder-nGVI
 
 //fetching data on client side
 const fetcher = (...args) => fetch(...args).then(res => res.json())
-function Profile() {
+function Profile() {  
   const { data, error } = useSWR(url, fetcher)
 
   if (error) return <div>failed to load</div>

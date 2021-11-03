@@ -15,3 +15,11 @@ since node_module is in .gitignore, run `npm install` first then `npm run dev`
 
 ## depedency
 `npm install react-hot-toast`
+
+# Changelog
+v0.36 
+-refactor the whole codebase to add automated testing
+v0.35 
+-fix bug in single input format
+v0.34 
+-fix bug in multiple input format

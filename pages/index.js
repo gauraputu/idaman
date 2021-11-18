@@ -1,4 +1,4 @@
-
+import Navbar from '../components/Navbar';
 import Layout from '../components/Layout';
 import PsbAlter from '../components/PsbAlter';
 // import { proses } from '../public/static/query.js'
@@ -9,6 +9,7 @@ const proses = require('../public/static/query');
 const Home = () => (
   <>
     <Layout />
+    <Navbar />
     <PsbAlter />
   </>
 )

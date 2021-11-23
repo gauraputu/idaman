@@ -1,4 +1,5 @@
-﻿*last update: 23/11/2021 11:12 AM*
+﻿*last update: 23/11/2021 16:34 PM*    
+ada yang salah? ayo ikut bantu tingkatkan, edit di [github](https://github.com/gauraputu/idaman/blob/developing/_posts/sop.md)
 ---
 # SOM dan TOM
 

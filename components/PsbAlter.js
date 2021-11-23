@@ -43,14 +43,14 @@ const PsbAlter = () => {
             <div className={styles.container}>
                 <Layout />
                 <Toaster />
-                <main className={styles.main}>
-                    <h1 className={styles.title}>
+                <main className="flex flex-col items-center">
+                    <h1 className="font-bold text-5xl">
                         PSB Alter Create
                     </h1>
-                    <textarea className={styles2.textBox} id="telegramText" placeholder="paste telegram text here!&#10;now support multi input with delimiter ;"></textarea>
+                    <textarea className="border-2 border-black rounded-md resize-none w-[700px] h-[250px] focus:ring-2 focus:ring-green-500" id="telegramText" placeholder="paste telegram text here!&#10;now support multi input with delimiter ;"></textarea>
                     <button className={styles2.btnNormal} id="processButton" onClick={lookUpData}>Process</button>
                 </main>
-                <Footer />
+                <Footer /> 
             </div>
         </>
     )

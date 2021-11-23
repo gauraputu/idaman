@@ -2,8 +2,8 @@ import styles from '../styles/Home.module.css';
 
 const Footer = () => (
     <>
-        <footer className={styles.footer}>
-            Made With ♥ Version 0.35
+        <footer className="h-[50px] text-center align-middle">
+            Made With ♥ Version 0.40
         </footer>
     </>
 );

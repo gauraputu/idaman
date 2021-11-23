@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar'
-import sopStyle from '../styles/sop.module.css'
+import Footer from '../components/Footer'
 const showdown  = require('showdown');
 const fs  = require("fs");
 
@@ -12,6 +12,7 @@ const sop = (props) =>{
                 <div dangerouslySetInnerHTML={{ __html:props.body}}/> 
             </div>
         </div>
+        <Footer />
         </>
     )
 }

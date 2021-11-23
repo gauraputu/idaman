@@ -10,51 +10,20 @@
 1. Buka service, bila status issued dan ada BI bilang cancel dulu ke yg kirim. Nanti akan di input ulang plaza. Orderan pelurusan PDA yg datang nanti harusnya tidak ada BI dan status config service complete. Luruskan dengan datek yg lama.
     
 bila service statusnya sudah complete
-1. Minta datek lama ke HD Logic, luruskan dengan datek lama.
+2. Minta datek lama ke HD Logic, luruskan dengan datek lama.
 
 # Error 1003 Unable to locate any S-VLAN associated to device Name
 
 1. Tanyakan VLAN dan Count untuk IP/nama GPON sesuai tiket ke HD logic.
 2. Masuk logical device, paste nama gpon, klik ID.
 3. Scroll ke bawah di bagian custom involvements, ubah involvement specification menjadi vlan_link.
-4. Edit service count svlan sesuai dengan yg dikirim, 
-- Bila tidak ada, klik involve pojok kiri, custom network address, isi ID dengan ID vlan yg dikirim, add Involvement specification dengan vlan link, service type sesuai tike (“Voice” , “Broadband”, “IPTV”), count sesuai yg dikirim lalu involve.
+4. Edit service count svlan sesuai dengan yg dikirim 
+  * Bila tidak ada, klik involve pojok kiri, custom network address, isi ID dengan ID vlan yg dikirim, add Involvement specification dengan vlan link, service type sesuai tike (“Voice” , “Broadband”, “IPTV”), count sesuai yg dikirim lalu involve.
+    
 5. RR tiket, done
 
 # Error 1004 Unable to locate line_profile
   
-Step 1: copy nomor service, klik search, klik id yg ada RFS-nya
-  
-
-Step 2: klik versi paling baru
-  
-
-Step 3: simpan sementara STP beserta target STP-nya, setelah itu klik resources pada service trail (bila masih cooper 
-  
-
-  
-
-Step 4: scroll ke bagian service dan persia ada berapa service berstatus “In Service”, klik pada salah satu ID service yg berstatus “in Service”
-
-
-  
-
-
-
-Step 5: klik kolom resources pada baris STP
-  
-
-Step 6: klik pada bagian physical device
-  
-
-Step 7: masuk ke bagian ID
-  
-
-Step 8: putus ODP, bila ada pelanggannya simpan di bank data telegram
-Buat trail dari STTP yg disimpan tadi
-  
-
-
 
 Bila tetap balik tier 3 buka uim tools, service, service management, service update, paste service, 
 1005:Invalid Port_Reservation_ID in request

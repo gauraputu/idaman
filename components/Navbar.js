@@ -21,12 +21,6 @@ const Navbar = () => (
               >
                 SOP
               </a>
-              <a
-                href="/sop2"
-                className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-              >
-                SOP2
-              </a>
             </div>
           </div>
         </div>

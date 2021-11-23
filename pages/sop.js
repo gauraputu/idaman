@@ -1,12 +1,17 @@
 import Navbar from '../components/Navbar'
+import sopStyle from '../styles/sop.module.css'
 const showdown  = require('showdown');
 const fs  = require("fs");
-// const postDirectory = join(process.cwd(),'_posts')
-const sop2 = (props) =>{
+
+const sop = (props) =>{
     return (
         <>
         <Navbar />
-        <div dangerouslySetInnerHTML={{ __html:props.body}}/> 
+        <div className="flex flex-col items-center ">
+            <div className="w-2/4 sopStyle">
+                <div dangerouslySetInnerHTML={{ __html:props.body}}/> 
+            </div>
+        </div>
         </>
     )
 }
@@ -16,7 +21,7 @@ export async function getStaticProps(){
     let html = converter.makeHtml(content);
 
     return {
-       props : {text:'#  this is markdown',body:html}
+       props : {body:html}
     }
 }
-export default sop2
+export default sop

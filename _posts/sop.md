@@ -1,80 +1,15 @@
-﻿# Jargon List
----
-26284538_152431205526_INTERNET →  service
-26284538_152431205526_INTERNET
-Nomor CLI/party id A
-Nomor Internet Pelanggan A
-Tipe layanan A
+﻿
+# SOM dan TOM
 
+1. Paste SC dan order ID di OSM dengan tipe pencarian ref#.  
+2. Pada kolom “ORDERID” merupakan nomor SOM dan TOM-nya. 
 
-STP →  Subscriber Terminal Port (ODP)
+# Pelurusan PDA (pindah alamat)
 
+1. Buka service, bila status issued dan ada BI bilang cancel dulu ke yg kirim. Nanti akan di input ulang plaza. Orderan pelurusan PDA yg datang nanti harusnya tidak ada BI dan status config service complete. Luruskan dengan datek yg lama.
 
-ODP gendong →  odp yg slot portnya >32 pelanggan
+# Pelurusan PSB G.Sheet Berlima 
 
-
-Datin → pelanggan indihome corporate
-
-
-Agar bisa alter di UIM, ubah region menjadi UK (windows), gunakan file .txt dengan encoding windows (jika di linux)
-
-
-List STO Datel Bangkalan
-ARB» AROSBAYA
-BEA» BLEGA
-BKL» BANGKALAN
-KML» KAMAL
-TBU» TANJUNG BUMI
-
-
-List STO Datel Pamekasan
-SPG» SAMPANG
-KPP» KETAPANG PAMEKSAN
-OMB» OMBEN
-PME» PAMEKASAN
-WRP» WARU PAMEKASAN
-
-
-List STO Datel Sumenep
-ABT» AMBUNTEN
-BAB» BATANG-BATANG
-SMP» SUMENEP
-PRG» PERAGAAN
-AJA» ARJASA
-SPK» SAPEKEN
-MSL» MASALEMBO
-SPD» SAPUDI
-Website yg dipakai
-http://nossf-uim.telkom.co.id/Inventory/faces/InventoryUIShell (UIM)
-https://nossa.telkom.co.id (NOSSA)
-https://nossf-osmfe.telkom.co.id/ (OSM)
-http://10.62.165.58/ibooster/login1.php (iBooster)
-https://emas.telkom.co.id (DAVA)
-http://noss.telkom.co.id/support/ (NOSS support, berisi list FO, penyebab dan cara penanganannya)
-https://starclickncx.telkom.co.id (Starclick)
-https://uimtools.telkom.co.id (UIMTools)
-http://10.62.165.36/valins/home.php (Web Valins)
-http://10.60.169.61/adminapp/validasi_dropcore/comparasi.php (Komparasi)
-https://docs.google.com/spreadsheets/d/1zLpVb2H6a-00kaMfY6XVM01Znnw_8S9iKuBsHI7pewA/edit?usp=sharing (Berlima)
-Specification CPE
-ALCxxxxx →  G240WL
-ZTExxxxx →  generic ONT
-xxxxxxxxx →  HG8245A
-
-
-Dimana xxx = angka
-
-
-*SN yg formatnya selain diatas gunakan specification generic ONT
-
-
-
-
-## SOM dan TOM
-Paste SC dan order ID di OSM dengan tipe pencarian ref#. Pada kolom “ORDERID” merupakan nomor SOM dan TOM-nya. 
-Pelurusan PDA (pindah alamat)
-Buka service, bila status issued dan ada BI bilang cancel dulu ke yg kirim. Nanti akan di input ulang plaza. Orderan pelurusan PDA yg datang nanti harusnya tidak ada BI dan status config service complete. Luruskan dengan datek yg lama.
-Pelurusan PSB G.Sheet Berlima 
 (~15 menit/case, 6 menit sampai create trail, ~2-3 menit/service, pelurusan manual)
 (~2-3 menit/case dengan DAVA)
 
@@ -1168,3 +1103,64 @@ Trimakasih
 
 For input string: "1536K"
 cek dirfs dan cfs di service uim biasanya ada penulisan upload atau download yang tidak sesuai (hanya boleh angka, tanpa huruf) atau service trail nya sharing
+
+
+ODP gendong →  odp yg slot portnya >32 pelanggan
+Datin → pelanggan indihome corporate
+
+
+
+
+
+
+## List STO Datel Bangkalan
+- ARB» AROSBAYA
+- BEA» BLEGA
+- BKL» BANGKALAN
+- KML» KAMAL
+- TBU» TANJUNG BUMI
+
+
+## List STO Datel Pamekasan
+- SPG» SAMPANG
+- KPP» KETAPANG PAMEKSAN
+- OMB» OMBEN
+- PME» PAMEKASAN
+- WRP» WARU PAMEKASAN
+
+
+## List STO Datel Sumenep
+- ABT» AMBUNTEN
+- BAB» BATANG-BATANG
+- SMP» SUMENEP
+- PRG» PERAGAAN
+- AJA» ARJASA
+- SPK» SAPEKEN
+- MSL» MASALEMBO
+- SPD» SAPUDI
+
+## Website yg dipakai
+http://nossf-uim.telkom.co.id/Inventory/faces/InventoryUIShell (UIM)
+https://nossa.telkom.co.id (NOSSA)
+https://nossf-osmfe.telkom.co.id/ (OSM)
+http://10.62.165.58/ibooster/login1.php (iBooster)
+https://emas.telkom.co.id (DAVA)
+http://noss.telkom.co.id/support/ (NOSS support, berisi list FO, penyebab dan cara penanganannya)
+https://starclickncx.telkom.co.id (Starclick)
+https://uimtools.telkom.co.id (UIMTools)
+http://10.62.165.36/valins/home.php (Web Valins)
+http://10.60.169.61/adminapp/validasi_dropcore/comparasi.php (Komparasi)
+https://docs.google.com/spreadsheets/d/1zLpVb2H6a-00kaMfY6XVM01Znnw_8S9iKuBsHI7pewA/edit?usp=sharing (Berlima)
+Specification CPE
+ALCxxxxx →  G240WL
+ZTExxxxx →  generic ONT
+xxxxxxxxx →  HG8245A
+
+
+Dimana xxx = angka
+
+
+*SN yg formatnya selain diatas gunakan specification generic ONT
+
+
+

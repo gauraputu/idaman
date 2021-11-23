@@ -8,7 +8,7 @@ const sop = (props) =>{
         <>
         <Navbar />
         <div className="flex flex-col items-center ">
-            <div className="w-2/4 sopStyle">
+            <div className="w-2/4 parsedown">
                 <div dangerouslySetInnerHTML={{ __html:props.body}}/> 
             </div>
         </div>

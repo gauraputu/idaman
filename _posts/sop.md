@@ -1,5 +1,5 @@
 ﻿*last update: 23/11/2021 16:34 PM*    
-ada yang salah? ayo ikut bantu tingkatkan, edit di [github](https://github.com/gauraputu/idaman/blob/developing/_posts/sop.md)
+ada yang salah? ayo ikut bantu tingkatkan, edit di [github](https://github.com/gauraputu/idaman/tree/main/_posts)
 ---
 # SOM dan TOM
 
@@ -212,7 +212,7 @@ Contoh gambar 4.
 
 1. Eskalasi ke grup inventory
 
-#REQ  #UIM    
+\#REQ  #UIM    
 Order MO    
 SC517552294    
 SOM : 391053164 GetTechnicalOrderTask    

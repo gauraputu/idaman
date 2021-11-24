@@ -404,7 +404,7 @@ Step: rr
 # terminationPoint == null
 
 1. Minta odp dan port lapangan servicenya, buat trail, masukan
-    * Bila balik tier 3 pastikan CPE sudah punya pipe FTTX_Drop_Cable, bila kosong sambungkan
+    * Bila balik tier 3 masuk ke CPE lalu pastikan sudah ada pipe FTTX_Drop_Cable, bila kosong sambungkan
 
 # resource == null
 

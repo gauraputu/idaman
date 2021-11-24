@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Navbar } from 'reactstrap';
 
 const Layout = ({Children}) => {
     return (
@@ -8,7 +7,6 @@ const Layout = ({Children}) => {
             <title>iDaman</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar />
         {Children}
     </>
     )

@@ -34,155 +34,26 @@ bila service statusnya sudah complete
 # 1006
 1. Tanya orderan, bila PSB cancel input ulang (atau bisa search no inet di uim, bila tidak ada berarti order psb, bila ada berarti modif), bila modif, samakan NCLI di uim dengan di Nossa, sesuaikan datek (stp, service port, trail), bila service disconnected
 
-# 1007:Unable to locate service port ODP-ARB-FD/11 FD/D01/11.01
-Penyambungan perangkat di UIM terdapat dua jenis. P2p (port to port) dan d2d (device to device). Dalam konteks 1007, sambungan p2p dari odp-olt ada yg terputus. Sambungan ini perlu diperbaiki. Tabel 1 menunjukan sambungan normal odp-olt. 
+# 1007:Unable to locate service port ODP-XXX-XXX/00
+Penyambungan perangkat di UIM terdapat dua jenis. p2p (port to port) dan d2d (device to device). Dalam konteks 1007, sambungan p2p dari odp-olt ada yg terputus. Sambungan ini perlu diperbaiki. Tabel 1 menunjukan sambungan normal p2p odp-olt. 
 
 
-Tabel 1. Connectivity dari ODP hingga OLT
-Port
-	Port
-	Jenis Pipe
-	ODP Splitter Outlet
-	ODP Uplink
-	Patch_Cable_Core
-	ODP Cassette Downlink
-	ODP Splitter Inlet
-	Patch_Cable_Core
-	ODC Outlet Panel Downlink
-	ODP Cassette Uplink
-	FTTX_Fiber
-	ODC Splitter Outlet
-	ODC Outlet Panel Uplink
-	Patch_Cable_Core
-	ODC Panel Downlink
-	ODC Splitter Inlet
-	Patch_Cable_Core
-	FTM OA Panel Downlink
-	ODC Panel Uplink
-	FTTX_Fiber
-	FTM EA Panel Downlink
-	FTM OA Panel Uplink
-	Patch_Cable_Core
-	OLT
-	FTM EA Panel Uplink
-	Patch_Cable_Core
-	
-
-FO 1007 terjadi karena connectivity dari ODP hingga OLT ada yg terputus/tidak normal (sambungan ganda). 
-
-
-Bila sambungan sudah tersambung OLT, periksa Downlink ODP yang direserve, apakah ada uplinknya atau tidak. Bila tidak ada periksa apakah benar jumlah port downlink sesuai dengan jumlah port valins, bila tidak revisi order.
-
-
-Bila perlu cepat, langsung sambung sambungan terakhir dengan OLT atau revoke order, pindah odp. 
-
-
-Step 1 : Search ODP di nossf-uim
-Copy nilai uplink dan splitter yg kosong 
-
-
-  
-
-Periksa sambungan terakhir pada kolom downlink atau end (jika downlink tidak terlihat). Ini menandakan sambungan selanjutnya tidak ada. Buka maincore untuk 
-
-
-  
-
-  
-
-  
-
-  
-
-
-
-Sambungan di ODP
-  
-
-Jika masuk ke FTTX ODP seharusnya ada 3 sub menu yaitu:
-* ODP_Panel
-* ODP_Panel_Interface
-* FTTX_Splitter
-
-
-ODP_Panel
-Berisi Downlink & Uplink port ODP.
-ODP_Panel_Interface
-Berisi Downlink & Uplink port cassette. 
-FTTX_Splitter
-Splitter bisa FTTX_Splitter_1to8 atau FTTX_Splitter_1to16 tergantung jumlah port ODP di lapangan. Untuk mengecek jumlah port ODP bisa di web valins.
-
-
-Nama splitter selalu “SPL-C.1-01” (tanpa tanda petik) kecuali jika dalam satu ODP ada dua splitter.
-  
-
-
-
-
-
-
-
-
-
-Sambungan di ODC
-Pada ODC akan ada 3 jenis sub menu:
-ODC Inlet Panel
-ODC Outlet Panel
-ODC 
-  
-
-Gambar 2).
-1. Nama ODC
-2. Nomor panel out dan portnya
-3. Nomor splitter dan outnya
-4. Nomor panel in dan portnya
-
-
-Misal untuk baris paling atas sambungannya :
-
-
-ODP cassette xx - Panel 13 port 3 downlink
-Panel 13 port 3 uplink - SPL-B.1-08 outlet 3
-SPL-B.1-08 inlet - Panel 2 port 12 downlink
-Panel 2 port 12 uplink - FTM downlink
-
-
-Di UIM berpatokan lah pada nomor panel, bukan keterangan inlet/outlet. 
-
-
-Sambungan FTM/ODF
-  
-
-Gambar 3. 
-1. Nomor panelnya
-2. Nomor portnya 
-
-
-Pada FTM port ada sesuai gambar dibawah 
-
-
-←—--24 port——-> 
-^
-|6 port
-
-
-Slotnya bisa dihitung dari atas ke bawah (1 slot = 6 port) atau dari kiri ke kanan (1 slot = 24 port).  Atau 1 slot ada 16 port, lihat file evidence. 
-
-
-Format penamaan FTM itu ada dua format:
-1. (STO)-01 (FTM/ODF)-(STO)-01
-E.g BAB-01 ODF-BAB-01
-2. (FTM/ODF)-(STO)-01
-E.g ODF-BAB-01
-
-
-Untuk yg ODF sambungannya ada yg langsung ke OLT ada juga yg menggunakan OA-EA
-Untuk FTM sambungan selalu menggunakan OA-EA.
-
-
-  
-
-Contoh gambar 4.
+**Tabel 1.** Connectivity dari ODP hingga OLT
+Port-Port|Jenis Pipe
+---|---
+ODP_Uplink_Port - ODP_Splitter_Outlet|Patch_Cable_Core
+ODP_Downlink_Port_Cassette - ODP_Splitter_Inlet|Patch_Cable_Core
+ODP_Uplink_Port_Cassette - ODP_Downlink_Port_Cassette|FTTX_Fiber
+ODP_Uplink_Port_Cassette - ODC_Panel_Downlink_Port|FTTX_Fiber
+ODP_Uplink_Port_Cassette - ODC_Panel_Downlink_Port|FTTX_Fiber
+ODC_Panel_Uplink_Port - ODC_Splitter_Outlet|Patch_Cable_Core
+ODC_Splitter_Inlet - ODC_Panel_Downlink_Port|Patch_Cable_Core
+ODC_Panel_Uplink_Port - FTM_OA_Panel_Downlink_Port|FTTX_Fiber
+FTM_OA_Panel_Uplink_Port - FTM_EA_Panel_Downlink_Port|FTTX_Fiber
+FTM_EA_Panel_Uplink_Port - GPON OLT|Patch_Cable_Core
+    
+Bila sambungan sudah tersambung OLT, periksa Downlink ODP yang direserve, apakah ada uplinknya atau tidak. Bila tidak ada periksa apakah benar jumlah port downlink sesuai dengan jumlah port valins, bila tidak revisi order.    
+Bila perlu cepat, langsung sambung sambungan terakhir dengan OLT atau revoke order, pindah odp.     
 
 # 1010 Unable to locate S-VLAN or M-VLAN associated to GPON03-D5-SMP-2(172.23.59.40) for IPTV_RFS service created by autodesign
 

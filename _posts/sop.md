@@ -1,4 +1,4 @@
-﻿*last update: 23/11/2021 16:34 PM*    
+﻿*last update: 08/12/2021 09:26 AM*    
 ada yang salah? ayo ikut bantu tingkatkan, edit di [github](https://github.com/gauraputu/idaman/tree/main/_posts)
 ---
 # SOM dan TOM
@@ -274,8 +274,7 @@ Step: rr
 
 # terminationPoint == null
 
-1. Minta odp dan port lapangan servicenya, buat trail, masukan
-    * Bila balik tier 3 masuk ke CPE lalu pastikan sudah ada pipe FTTX_Drop_Cable, bila kosong sambungkan
+1. pastikan cpe dan STP ada dalam 1 pipe yg sama, jika sudah disamakan RR
 
 # resource == null
 

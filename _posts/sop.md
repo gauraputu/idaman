@@ -138,7 +138,7 @@ Jika hanya voice masuk CPE dan isikan network ID berapa saja, RR
 # 1046 
 
 1. Bila order AO Revisi order
-2. Bila order MO tanya update speed dari berapa ke berapa, buka uim tools, masuk service management, service update, masukan nomor inet, lihat di tiket jenis paket yg perlu diubah, update paket service agar berlainan dengan yg di tiket
+2. Bila order MO ubah speed ke paket lain yang berbeda dengan yang ada di nossa. 
 
 # 1048 delete feature yg sama dengan yg nossa
 Step 1: sama seperti 1049 hanya saya feature didelete, bukan di add

@@ -324,6 +324,10 @@ Step: rr
 
 1. Ubah status service cfs menjadi suspended kemudian status service cfs dan rfs menjadi suspend.
 
+# The current service status of Suspended is invalid for the selected action. 
+
+1. ubah status service menjadi inservice. 
+
 # 270138 Resources cannot be assigned in Live context when Consumer is in Business Interaction context
 
 1. Trail kena BI, carikan port lain dan buatkan trail baru
@@ -400,5 +404,3 @@ Datin → pelanggan indihome corporate
 * CPE lain selain format diatas → generic ONT
     
 Dimana xxx = angka
-# ini judul contoh
-sdflkjsdlfjlkstasjdflkj 

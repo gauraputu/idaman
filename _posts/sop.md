@@ -126,10 +126,15 @@ bila tetap balik tier 3, minta cancel input ulang ke inputer
 
 1. sesuaikan CPE dengan iBooster
 
-# 1038
+# 1038: Mandatory parameter network id of CPE is missing for : xxxxx_xxxxxx_INTERNET
+
 1. Copy id internet pelanggan, buka ibooster, simpan network id dan serial number, buka service, masuk rfs periksa apakah specification di cpe sudah sesuai SN ibooster, bila tidak buatkan cpe baru, simpan id inet/voice/iptv (sesuai permintaan), alter cpe, rr tiket, done bila cpe sudah sesuai SN masuk cpe, edit, tambahkan network id, rr tiket, done
     
 Jika hanya voice masuk CPE dan isikan network ID berapa saja, RR
+
+# 1038: Mandatory parameter Vendor of CPE is missing for : xxxxx_xxxxxx_INTERNET
+
+1. masuk CPE, lihat specification, bila HG isikan HUAWEI , bila generic isikan ZTE ,    bila g240wl isikan NOKIA
 
 # 1043 VPI is missing for Service
 

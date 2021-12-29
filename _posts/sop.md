@@ -146,11 +146,16 @@ Jika hanya voice masuk CPE dan isikan network ID berapa saja, RR
 2. Bila order MO ubah speed ke paket lain yang berbeda dengan yang ada di nossa. 
 
 # 1048 delete feature yg sama dengan yg nossa
+
 Step 1: sama seperti 1049 hanya saya feature didelete, bukan di add
 
 # 1049
 
 1. masuk CFS, create new configuration, add feature dengan isi sesuai NOSSA, approve-issue-complete, RR
+
+# 1050: Unable to determine User Group ID - Package_Name&Technology_Type combination not found in custom-values.properties]
+
+1. Revisi order, input ulang dengan UseeTV SD
 
 # 1053
 
